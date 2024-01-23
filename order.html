@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/order.css" />
+    <title>Order Page</title>
+</head>
+
+<body>
+    <!-- header section starts -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">foot<span>flex</span></a>
+            <a class="menu fas fa-bars"></a>
+            <nav class="navbar">
+                <a href="#">home</a>
+                <a href="#about">about</a>
+                <a href="#services">services</a>
+                <a href="#works">works</a>
+                <a href="order.html">order</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- order section starts -->
+    <section class="order" id="order">
+        <h1 class="heading">Place Your Order</h1>
+        <div class="box-container">
+            <form id="orderForm">
+                <div class="inputBox">
+                    <input type="text" id="fullName" placeholder="Your Full Name" required />
+                    <input type="email" id="email" placeholder="Your Email" required />
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" id="address" placeholder="Your Address" required />
+                    <input type="tel" id="phone" placeholder="Your Phone Number" required />
+                </div>
+
+                <div class="inputBox">
+                    <select id="shoeModel" required>
+                        <option value="" disabled selected>Select Shoe Model</option>
+                        <option value="The Ja 1s">The Ja 1s</option>
+                        <option value="Yeezy">Yeezy</option>
+                        <!-- Add other shoe models as options -->
+                    </select>
+                </div>
+
+                <div class="inputBox">
+                    <textarea id="additionalNotes" placeholder="Additional Notes"></textarea>
+                </div>
+
+                <input type="submit" value="Place Order" class="btn" />
+            </form>
+        </div>
+    </section>
+    <!-- order section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <a href="#" class="logo">Foot<span>flex</span></a>
+        <p>
+            2024 FootFlex. All rights reserved.
+        </p>
+        <div class="socials">
+            <ion-icon name="logo-google"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+    <script type="text/javascript" src="js/js.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
